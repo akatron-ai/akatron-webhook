@@ -1,0 +1,23 @@
+{
+  "name": "akatron-webhook",
+  "version": "1.0.0",
+  "description": "Automated webhook server for AKATRON payment processing and report generation",
+  "main": "api/webhook.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "razorpay",
+    "webhook",
+    "payment",
+    "automation"
+  ],
+  "author": "AKATRON",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "nodemailer": "^6.9.7",
+    "pdfkit": "^0.13.0"
+  }
+}
