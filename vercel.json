@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "RAZORPAY_KEY_SECRET": "@razorpay-key-secret",
+    "LEAKCHECK_API_KEY": "@leakcheck-api-key",
+    "GMAIL_USER": "@gmail-user",
+    "GMAIL_APP_PASSWORD": "@gmail-app-password"
+  }
+}
